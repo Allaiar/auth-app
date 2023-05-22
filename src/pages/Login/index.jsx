@@ -1,9 +1,79 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import axios from "axios";
 
 const Login = () => {
+  const [userName, setuserName] = useState("");
+  const [pass, setPass] = useState("");
+
+  const LoginProccess = (e) => {
+    e.preventDefault();
+    if (validate()) {
+      axios
+        .get("http://localhost:8000/users/" + userName)
+        .then((res) => console.log(res.data))
+        .catch(() => {
+          toast.error("Введите корректные данные");
+        });
+    }
+  };
+
+  const validate = () => {
+    let result = true;
+    if (userName === "") {
+      result = false;
+      alert("Заполните никнейм");
+    }
+    if (pass === "") {
+      result = false;
+      alert("Заполните пароль");
+    }
+    return result;
+  };
+
   return (
-    <div className="text-center">
-      <h1 className="text-4xl my-10">Вы успешно зарегистрировались👌</h1>
+    <div className="text-center mx-auto mt-20 p-5 bg-slate-100 max-w-lg shadow-lg shadow-cyan-500/50 rounded-2xl">
+            <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+      <h1 className="">Login</h1>
+      <div className="flex flex-col gap-y-1">
+      <label>
+        <input
+        className="border-2"
+          value={userName}
+          onChange={(e) => setuserName(e.target.value)}
+          type="text"
+        />
+      </label>
+      <label>
+        <input
+        className="border-2"
+          value={pass}
+          onChange={(e) => setPass(e.target.value)}
+          type="password"
+        />
+      </label>
+      </div>
+      <div className="flex justify-center gap-x-1">
+        <button onClick={LoginProccess}>Войти</button>
+        <span>/</span>
+        <button>
+          <Link to="/register">Регистрация</Link>
+        </button>
+      </div>
     </div>
   );
 };

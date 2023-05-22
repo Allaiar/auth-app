@@ -20,18 +20,16 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let obj = { id, name, password, email, phone, country, address, gender };
-    console.log(obj);
 
     axios
       .post("http://localhost:8000/users", {
-        body: JSON.stringify(obj),
+        id, name, password, email, phone, country, address, gender
       })
       .then(() => {
         toast.success("Регистрация успешно выполнена");
         setTimeout(() => {
           navigate("/login");
-        }, 3000);
+        }, 2000);
       })
       .catch(() => {
         toast.error("Ошибка сервера");
@@ -52,7 +50,7 @@ const Register = () => {
         pauseOnHover
         theme="colored"
       />
-      <div className="flex gap-x-20 justify-center mx-auto my-20 bg-slate-50 shadow-lg shadow-blue-500/50 pb-10 pt-5 max-w-lg rounded-2xl">
+      <div className="flex gap-x-20 justify-center mx-auto my-20 bg-slate-100 shadow-lg shadow-blue-500/50 pb-10 pt-5 max-w-lg rounded-2xl">
         <div className="flex flex-col gap-y-5">
           <h1 className="font-bold">User Registration</h1>
           <label className="flex flex-col font-medium text-xs">

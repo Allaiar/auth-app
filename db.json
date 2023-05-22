@@ -1,92 +1,54 @@
 {
   "users": [
     {
-      "body": "{\"id\":\"Alik\",\"name\":\"Radzhapov Allaiar\",\"password\":\"nazira647\",\"email\":\"radzhapov.allayar@gmail.com\",\"phone\":\"996990200225\",\"country\":\"Киргизия\",\"address\":\"Ильменская 55\",\"gender\":\"male\"}",
-      "id": 1
+      "id": 3,
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "country": "",
+      "address": "",
+      "gender": ""
     },
     {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 2
+      "id": 4,
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "country": "",
+      "address": "",
+      "gender": ""
     },
     {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 3
+      "id": 5,
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "country": "",
+      "address": "",
+      "gender": ""
     },
     {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 4
+      "id": 6,
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "country": "",
+      "address": "",
+      "gender": ""
     },
     {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 5
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 6
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 7
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 8
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 9
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 10
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 11
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 12
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 13
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 14
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 15
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 16
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 17
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 18
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 19
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 20
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 21
-    },
-    {
-      "body": "{\"id\":\"\",\"name\":\"\",\"password\":\"\",\"email\":\"\",\"phone\":\"\",\"country\":\"\",\"address\":\"\",\"gender\":\"\"}",
-      "id": 22
+      "id": "Alik",
+      "name": "Radzhapov Allaiar",
+      "password": "Nazira648",
+      "email": "radzhapov.allayar@gmail.com",
+      "phone": "996990200225",
+      "country": "Киргизия",
+      "address": "Ильменская 55",
+      "gender": "male"
     }
   ]
 }
