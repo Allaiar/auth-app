@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
 import "../../style.css";
 
 const Register = () => {
@@ -26,14 +27,32 @@ const Register = () => {
       .post("http://localhost:8000/users", {
         body: JSON.stringify(obj),
       })
-      .then(() => {alert("Регистрация успешна выполнена");
-       navigate("/login")})
-      .catch(() => {alert("Ошибка сервера")});
+      .then(() => {
+        toast.success("Регистрация успешно выполнена");
+        setTimeout(() => {
+          navigate("/login");
+        }, 3000);
+      })
+      .catch(() => {
+        toast.error("Ошибка сервера");
+      });
   };
 
   return (
     <div className="container mx-auto">
-      <div className="flex gap-x-20 justify-center mx-auto my-20 bg-slate-50 shadow-lg shadow-blue-500/50 	pb-10 pt-5 max-w-lg rounded-2xl">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+      <div className="flex gap-x-20 justify-center mx-auto my-20 bg-slate-50 shadow-lg shadow-blue-500/50 pb-10 pt-5 max-w-lg rounded-2xl">
         <div className="flex flex-col gap-y-5">
           <h1 className="font-bold">User Registration</h1>
           <label className="flex flex-col font-medium text-xs">
@@ -76,7 +95,10 @@ const Register = () => {
               onChange={(e) => setAddress(e.target.value)}
             />
           </label>
-          <button className="border-2 relative w-32 bg-slate-50 rounded-md" onClick={handleSubmit}>
+          <button
+            className="border-2 relative w-32 bg-slate-50 rounded-md"
+            onClick={handleSubmit}
+          >
             Registration
           </button>
         </div>
@@ -129,7 +151,9 @@ const Register = () => {
                 checked={gender === "female"}
                 onChange={(e) => setGender(e.target.value)}
               />
-              <label>female</label>
+              <label>
+                female
+              </label>
             </div>
           </label>
         </div>
